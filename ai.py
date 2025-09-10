@@ -4,7 +4,7 @@ from openai import OpenAI
 def a(command):
   client = OpenAI(
       base_url="https://openrouter.ai/api/v1",
-      api_key="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",
+      api_key="your api key",
     )
 
   completion = client.chat.completions.create(
@@ -17,4 +17,5 @@ def a(command):
   )
 
   return completion.choices[0].message.content 
+
 
